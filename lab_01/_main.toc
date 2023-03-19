@@ -1,0 +1,13 @@
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{Введение}{3}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Теоретические вопросы}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Элементы языка: определение, синтаксис, представление в памяти}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Особенности языка Lisp. Структура программы. Символ апостроф.}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Базис языка Lisp. Ядро языка.}{6}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Ход выполнения практического задания}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Представление списков в виде списочных ячеек}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Используя только функции CAR и CDR, написать выражения}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Определение результата вычисления выражений}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Результат и объяснение вычисления выражений}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Лямбда-выражения и соответствующие им функции}{12}{section.2.5}%
+\contentsline {chapter}{Вывод}{14}{chapter*.14}%

@@ -1,0 +1,105 @@
+% !TeX spellcheck = ru_RU
+\documentclass[a4paper, 14pt, unknownkeysallowed]{extreport}
+\include{../common/settings}
+
+\begin{document}
+\include{title}
+\setcounter{page}{2}
+
+\chapter*{Введение}
+\addcontentsline{toc}{chapter}{Введение}
+Цель работы: приобрести навыки создания и использования функций пользователя в Lisp.
+
+Задачи работы:
+\begin{itemize}
+	\item изучить работу интерпретатора Lisp;
+	\item изучить алгоритм работы функции eval;
+	\item изучить структуру и порядок обработки программы в Lisp.
+\end{itemize}
+
+\chapter{Практические задания}
+
+\section{Составить диаграммы вычисления для \\выражений}
+
+\img{1}{1_1}{}
+\img{1}{1_2}{}
+\img{1}{1_3}{}
+\img{1}{1_4}{}
+\img{1}{1_5}{}
+\img{1}{1_6}{}
+
+\clearpage
+\section{Написать функцию, вычисляющую \\ гипотенузу прямоугольного треугольника по заданным катетам и составить диаграмму её вычисления}
+
+\begin{lstlisting}
+(defun hyp (a, b)
+	(sqrt (+ (* a a) (* b b)))
+)
+\end{lstlisting}
+
+\img{1}{2_1}{}
+
+\section{Каковы результаты вычисления следующих выражений?}
+
+\begin{lstlisting}
+(list 'a c) ; unbound variable c, solution: (list 'a 'c)
+(cons 'a (b c)) ; unbound variable (b c), solution: (cons 'a '(b c))
+(caddr (1 2 3 4 5)) ; illegal function call, solution: (caddr '(1 2 3 4 5))
+(cons 'a 'b 'c) ; invalid number of arguments: 3, solution:  (cons 'a (cons'b 'c))
+(list 'a (b c)) ; unbound variable b, solution: (list 'a '(b c))
+(list a '(b c)) ; unbound variable a, solution: (list 'a '(b c))
+(list (+ 1 '(length '(1 2 3)))) ; type error, solution: (list (+ 1 (length '(1 2 3))))
+\end{lstlisting}
+
+\section{Написать функцию longer\_then от двух\\ списков-аргументов, которая возвращает Т, если первый аргумент имеет большую\\ длину}
+
+\begin{lstlisting}
+(defun longer_then (a b)
+	(> (length a) (length b))
+\end{lstlisting}
+
+\section{Каковы результаты вычисления следующих выражений?}
+
+\begin{lstlisting}
+(cons 3 (list 5 6))	;(3 5 6)
+(cons 3 '(list 5 6)) ;(3 list 5 6)
+(list 3 'from 9 'lives (- 9 3))	;(3 from 9 lives 6)
+(+ (length for 2 too)) (car '(21 22 23))) ;the variable FOR is unbound
+(cdr '(cons is short for ans))	;(is short for ans)
+(car (list one two))	;the variable ONE is unbound
+(car (list 'one 'two)) ;one
+\end{lstlisting}
+
+\section{Какие результаты вычисления следующих выражений?}
+Дана функция (defun mystery (x) (list (second x) (first x))).
+
+\begin{lstlisting}
+(mystery (one two)) ;undefined function ONE
+(mystery (last one two)) ;undefined function LAST
+(mystery free) ;the variable FREE is unbound
+(mystery one 'two) ;the variable ONE is unbound
+\end{lstlisting} 
+
+\section{Написать функцию, которая переводит \\температуру в системе Фаренгейта в \\температуру по Цельсию.}
+
+\begin{lstlisting}
+(defun f-to-c (x) 
+	(* (/ 5 9) (- x 32)))
+\end{lstlisting} 
+
+Как бы назывался роман Р.Брэдбери "+451 по Фаренгейту" в системе по Цельсию?
+Ответ: 232.78 по Цельсию
+
+\section{Что получится при вычисления каждого из выражений?}
+
+\begin{lstlisting}
+(list 'cons t NIL)	;(cons t Nil)
+(eval (list 'cons t NIL)) ;(T)
+(eval (eval (list 'cons t NIL))) ;function T is undefined
+(apply #'cons '(t NIL))	;(T)
+(eval NIL) ;Nil
+(list 'eval NIL) ;(eval Nil)	
+(eval (list 'eval NIL)) ;(Nil)
+\end{lstlisting} 
+
+\end{document}
