@@ -311,3 +311,6 @@ TSWLatexianTemp*
 *.toc
 *.dtmp
 *.bkp
+*.env
+*.grd
+*.prj
