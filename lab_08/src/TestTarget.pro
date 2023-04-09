@@ -4,14 +4,15 @@ domains
 	house,flat,cost,number,size, speed = integer
 	address = adr(city, street, integer, integer) 
 	owned = 
-		auto(name, mark, color, cost, number);
-		building(name, price, address);
-		land(name, cost, size);
-		wvehicle(name, cost, speed).
+		auto(mark, color, cost, number);
+		building(cost, address);
+		land(cost, size);
+		vehicle(cost, speed).
 	
 predicates
-	record(name, phone, address)
-	ownership(name, owned)
+	nondeterm record(name, phone, address)
+	nondeterm ownership(name, owned)
+	nondeterm request(Mark, Color, Name, Phone, City)
 	
 
 clauses
@@ -22,15 +23,15 @@ clauses
 	record(smirnov, "+7 583", adr("St.Petersburg", "Volnaya", 123, 52)).
 	record(trunov, "+7 198", adr("Vologda", "Ryzhskaya", 19, 42)).
 	
-	auto(petrov, "Volvo", "Black", 50, 322).
-	auto(petrov, "Nissan", "White", 60, 342).
-	auto(smirnov, "Lada", "Blue", 10, 583).
-	auto(trunov, "Nissan", "Blue", 70, 893).
-	auto(ivanov, "Toyota", "Red", 50, 967).
+	ownership(petrov, auto("Volvo", "Black", 50, 322)).
+	ownership(petrov, auto("Nissan", "White", 60, 342)).
+	ownership(smirnov, auto("Lada", "Blue", 10, 583)).
+	ownership(trunov, auto("Nissan", "Blue", 70, 893)).
+	ownership(ivanov, auto("Toyota", "Red", 50, 967)).
 	
-	request1(Mark, Color, Name, Phone, City):-
-		auto(Name,Mark, Color,_,_), 
+	request(Mark, Color, Name, Phone, City):-
+		ownership(Name,auto(Mark, Color,_,_)), 
 		record(Name, Phone, adr(City,_,_,_)).
 
 goal
-	
+	request("Nissan",_,Name,_,_).
