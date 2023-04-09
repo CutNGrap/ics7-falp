@@ -1,5 +1,0 @@
-\babel@toc {russian}{}\relax 
-\contentsline {chapter}{Введение}{3}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Ход выполнения практического задания}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Составить диаграммы вычисления для выражений}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Написать функцию, вычисляющую гипотенузу прямоугольного треугольника по заданным катетам и составить диаграмму её вычисления}{5}{section.1.2}%
