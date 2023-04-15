@@ -1,5 +1,5 @@
  PDC Linker 50.35 20000313.10.LINK55.
-  Module 'Obj\GOAL$000.EXE' Map. Sun Apr 09 20:00:21 2023
+  Module 'Obj\GOAL$000.EXE' Map. Mon Apr 10 09:52:55 2023
 
 Frame 010000   Size 0035D0.  Name=<   .data>, 	Chars=C0000040h. [IRW]
 Frame 020000   Size 000210.  Name=<  .rdata>, 	Chars=40000040h. [IR]
@@ -10,8 +10,8 @@ Frame 050000   Size 000530.  Name=<    .bss>, 	Chars=C0000080h. [URW]
 
 Frame 010000   Size 0035D0.  Name=<   .data>, 	Chars=C0000040h. [IRW]
 010000:000000 0016E8   .bss::BSS::DGROUP F=4
-   010000   Module 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
-   010000   Module 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ'
+   010000   Module 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
+   010000   Module 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ'
    0100B0   Module 'runbtrak.obj'
    0100B0   Module 'runinit.obj'
    0100B4   Module 'memsidi.obj'
@@ -27,10 +27,10 @@ Frame 010000   Size 0035D0.  Name=<   .data>, 	Chars=C0000040h. [IRW]
    0116A8   Module 'rntcfci.obj'
    0116A8   Module 'rntconv.obj'
 010000:0016E8 001ED8   .data::DATA::DGROUP F=4
-   0116E8   Module 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
-   011740   Module 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ'
+   0116E8   Module 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
+   011740   Module 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ'
    0117A8   Module 'Obj\GOAL$000.OBJ'
-   011FC8   Module 'C:\grape\ics7-falp\lab_08\src\Obj\GOAL$000.SYM'
+   011FC8   Module 'C:\grape\ics7-falp\prolog\lab_08\src\Obj\GOAL$000.SYM'
    012478   Module 'iomin.obj'
    0124A0   Module 'memheapn.obj'
    0124E0   Module 'runflags.obj'
@@ -73,11 +73,11 @@ Frame 010000   Size 0035D0.  Name=<   .data>, 	Chars=C0000040h. [IRW]
    013598   Module 'osfmatch.obj'
    0135C0   Module 'rntcfci.obj'
 010000:0035C0 000010   PROMODE::DATA::DGROUP F=4
-   0135C0   Module 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
+   0135C0   Module 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
 
 Frame 020000   Size 000210.  Name=<  .rdata>, 	Chars=40000040h. [IR]
 020000:000000 000208   .rdata::.rdata::.rdata F=4
-   020000   Module 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
+   020000   Module 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
    020000   Module 'runbtrak.obj'
    020000   Module 'memsidi.obj'
    020000   Module 'scanreal.obj'
@@ -90,10 +90,10 @@ Frame 020000   Size 000210.  Name=<  .rdata>, 	Chars=40000040h. [IR]
 
 Frame 030000   Size 010CA0.  Name=<   .text>, 	Chars=60000020h. [CER]
 030000:000000 0102F0   .text::CODE::<no group> F=4
-   030000   Module 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
-   0300A0   Module 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ'
+   030000   Module 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
+   0300A0   Module 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ'
    030B60   Module 'Obj\GOAL$000.OBJ'
-   030FF0   Module 'C:\grape\ics7-falp\lab_08\src\Obj\GOAL$000.SYM'
+   030FF0   Module 'C:\grape\ics7-falp\prolog\lab_08\src\Obj\GOAL$000.SYM'
    030FF0   Module 'runerr.obj'
    031130   Module 'iogetln.obj'
    0312F0   Module 'strcat0.obj'
@@ -215,7 +215,7 @@ Frame 010000   Size 0035D0.  Name=<   .data>, 	Chars=C0000040h. [IRW]
 01:000116EA __fltused  (Idle)
 --- From 'rntcfact.obj'
 01:0001173A _INIT_StartOfData 
---- From 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ'
+--- From 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ'
 01:0001173B _PROLOG_ModTab 
 --- From 'Obj\GOAL$000.OBJ'
 01:000117A8 $global$dom$char 
@@ -258,7 +258,7 @@ Frame 010000   Size 0035D0.  Name=<   .data>, 	Chars=C0000040h. [IRW]
 01:00011B20 $global$dom$denymode 
 01:00011B38 $global$dom$bgi_ilist 
 01:00011F68 _PROLOG_Vars 
---- From 'C:\grape\ics7-falp\lab_08\src\Obj\GOAL$000.SYM'
+--- From 'C:\grape\ics7-falp\prolog\lab_08\src\Obj\GOAL$000.SYM'
 01:00011FC8 _PROLOG_SymbolTable 
 --- From 'ioclose.obj'
 01:00012478 _IO_Vars 
@@ -367,16 +367,16 @@ Frame 030000   Size 010CA0.  Name=<   .text>, 	Chars=60000020h. [CER]
 030000:000000 0102F0   .text::CODE::<no group> F=4
 --- From 'erracces.obj'
 03:00030000 __chkstk 
---- From 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
+--- From 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ'
 03:0003002F _PDCPrologStart  (Idle)
---- From 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ'
+--- From 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ'
 03:000300A0 _xPDCStdProc@16 
 03:0003019B _EasySubclassProc@16 
 03:0003028B _IO_RdLine 
 --- From 'ioout.obj'
 03:000302FE _IO_WrStrCon 
 03:0003031C _IO_WrChCon 
---- From 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ'
+--- From 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ'
 03:00030723 _IO_RdIntg  (Idle)
 03:00030789 _IO_RdReal  (Idle)
 03:000307EF _IO_RdCh  (Idle)
@@ -938,7 +938,7 @@ Frame 030000   Size 010CA0.  Name=<   .text>, 	Chars=60000020h. [CER]
 03:00040C8C _RNT_InitEndData 
 Frame 050000   Size 000530.  Name=<    .bss>, 	Chars=C0000080h. [URW]
 050000:000000 000524   *** Comm1 ***::BSS::<no group> F=0
---- From 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ'
+--- From 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ'
 04:00050000 _INIT_hInstance 
 --- From 'meminit.obj'
 04:00050004 __MEM_Granularity 
@@ -975,73 +975,73 @@ Frame 050000   Size 000530.  Name=<    .bss>, 	Chars=C0000080h. [URW]
 [import] 'errputms.obj' USER32.DLL. __imp__GetActiveWindow@0 
 [import] 'osseekrd.obj' KERNEL32.DLL. __imp__ReadFile@20 
 [import] 'osthread.obj' KERNEL32.DLL. __imp__InitializeCriticalSection@4 
-[import] 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _ExitProcess@4 
+[import] 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _ExitProcess@4 
 [import] 'osfmatch.obj' KERNEL32.DLL. __imp__FindClose@4 
 [import] 'osseekrd.obj' KERNEL32.DLL. __imp__SetFilePointer@16 
 [import] 'osopen.obj' KERNEL32.DLL. __imp__CreateFileA@28 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__DestroyWindow@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SetFocus@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__MoveWindow@24 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__PostQuitMessage@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__DefWindowProcA@16 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__DestroyWindow@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SetFocus@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__MoveWindow@24 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__PostQuitMessage@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__DefWindowProcA@16 
 [import] 'osfmatch.obj' KERNEL32.DLL. __imp__SetLastError@4 
 [import] 'errputms.obj' USER32.DLL. __imp__MessageBoxA@16 
 [import] 'osfmatch.obj' KERNEL32.DLL. __imp__FindFirstFileA@8 
 [import] 'chinit.obj' USER32.DLL. __imp__CharLowerA@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SetWindowLongA@12 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SetWindowLongA@12 
 [import] 'osgenvs.obj' KERNEL32.DLL. __imp__GetEnvironmentVariableA@12 
 [import] 'osgdir.obj' KERNEL32.DLL. __imp__GetCurrentDirectoryA@8 
 [import] 'osfmatch.obj' KERNEL32.DLL. __imp__FileTimeToSystemTime@8 
 [import] 'osgdir.obj' KERNEL32.DLL. __imp__SetCurrentDirectoryA@4 
 [import] 'osabort.obj' KERNEL32.DLL. __imp__ReadConsoleInputA@16 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__CallWindowProcA@20 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetDlgItem@8 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__CallWindowProcA@20 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetDlgItem@8 
 [import] 'osfmatch.obj' KERNEL32.DLL. __imp__FindNextFileA@8 
 [import] 'osfmatch.obj' KERNEL32.DLL. __imp__FileTimeToLocalFileTime@8 
 [import] 'osabort.obj' KERNEL32.DLL. __imp__SetConsoleMode@8 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetClientRect@8 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__ShowWindow@8 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetWindowLongA@8 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__CreateWindowExA@48 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__TranslateMessage@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__UpdateWindow@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__RegisterClassA@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__LoadCursorA@8 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetMessageA@16 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetClientRect@8 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__ShowWindow@8 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetWindowLongA@8 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__CreateWindowExA@48 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__TranslateMessage@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__UpdateWindow@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__RegisterClassA@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__LoadCursorA@8 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetMessageA@16 
 [import] 'ossysp.obj' KERNEL32.DLL. __imp__GetModuleFileNameA@12 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetSystemMenu@8 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetClassNameA@12 
-[import] 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _GetCommandLineA@0 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetSystemMenu@8 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetClassNameA@12 
+[import] 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _GetCommandLineA@0 
 [import] 'meminit.obj' KERNEL32.DLL. __imp__GetSystemInfo@4 
 [import] 'runexcpt.obj' KERNEL32.DLL. __imp__GetVersion@0 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__PeekMessageA@20 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__PeekMessageA@20 
 [import] 'erracces.obj' KERNEL32.DLL. __imp__LocalFree@4 
 [import] 'runexcpt.obj' KERNEL32.DLL. __imp__SetConsoleCtrlHandler@8 
 [import] 'runexcpt.obj' KERNEL32.DLL. __imp__SetUnhandledExceptionFilter@4 
 [import] 'runexcpt.obj' KERNEL32.DLL. __imp__VirtualProtect@16 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__PostMessageA@16 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__PostMessageA@16 
 [import] 'runinit.obj' KERNEL32.DLL. __imp__LoadLibraryA@4 
 [import] 'osflush.obj' KERNEL32.DLL. __imp__FlushFileBuffers@4 
-[import] 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _GetModuleHandleA@4 
-[import] 'C:\VIP52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _GetStartupInfoA@4 
+[import] 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _GetModuleHandleA@4 
+[import] 'C:\VISUALPROLOG52\VPI\LIB\WIN32\MSC\INIT32.OBJ' KERNEL32.DLL. _GetStartupInfoA@4 
 [import] 'chinit.obj' USER32.DLL. __imp__IsCharUpperA@4 
 [import] 'osclose.obj' KERNEL32.DLL. __imp__CloseHandle@4 
 [import] 'chinit.obj' USER32.DLL. __imp__IsCharLowerA@4 
 [import] 'osflock.obj' KERNEL32.DLL. __imp__UnlockFile@20 
 [import] 'memheapn.obj' KERNEL32.DLL. __imp__VirtualAlloc@16 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SendMessageA@16 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SendMessageA@16 
 [import] 'osflock.obj' KERNEL32.DLL. __imp__LockFile@20 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__MessageBeep@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__MessageBeep@4 
 [import] 'osseekrd.obj' KERNEL32.DLL. __imp__GetLastError@0 
 [import] 'runinit.obj' KERNEL32.DLL. __imp__GetProcAddress@8 
 [import] 'runinit.obj' KERNEL32.DLL. __imp__FreeLibrary@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetFocus@0 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetFocus@0 
 [import] 'runinit.obj' KERNEL32.DLL. __imp__GetCommandLineA@0 
 [import] 'erracces.obj' KERNEL32.DLL. __imp__FormatMessageA@28 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetWindowTextLengthA@4 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetWindowTextA@12 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SetWindowTextA@8 
-[import] 'C:\VIP52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__DispatchMessageA@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetWindowTextLengthA@4 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__GetWindowTextA@12 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__SetWindowTextA@8 
+[import] 'C:\VISUALPROLOG52\LIB\WIN32\MSC\EASYWIN.OBJ' USER32.DLL. __imp__DispatchMessageA@4 
 [import] 'memheapn.obj' KERNEL32.DLL. __imp__VirtualFree@12 
 --- Total Names =   614 --------
 --- Total Cnt   =   614 --------
