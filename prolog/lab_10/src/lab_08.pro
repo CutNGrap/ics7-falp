@@ -23,6 +23,8 @@ clauses
 		R1=X1+X2,
 		P=I-1,
 		fib1(P,R,R1,X1).
+		
+	delete(
 	
 goal
 	factorial(3,Fact).
