@@ -14,7 +14,7 @@ predicates
 	delete_elem_once(list, int, list)
 	list_cnt(list,list,list)
 	delete(list,list,int,list,list)
-	
+	delete1(list,list,int,list,list,int)
 clauses
 	len(List, N):-
 		len(List, N, 0).
@@ -65,10 +65,6 @@ clauses
 	delete_elem_all([H|T], Num, [H|Res]):- %not equal
 		!,delete_elem_all(T, Num, Res).
 		
-
-	%delete(L1, L2,Num, Res1, Res2):- 
-		%delete_elem_all(L1, Num, Res1),
-		%delete_elem_all(L2, Num, Res2).
 	
 	delete([],[],_,[],[]):-!.
 	delete([], L2, Num, _, Res2):-
@@ -87,13 +83,25 @@ clauses
 		delete(T1, T2, Num, Res1, Res2).
 		
 		
-	
-	
-	
+	delete1([],[],_,[],[],N):-write("end ",N),nl,!.
+	delete1([], L2, Num, _, Res2,N):-
+		!,delete_elem_all(L2, Num, Res2).
+	delete1(L1, [], Num, Res1, _,N):-
+		!,delete_elem_all(L1, Num, Res1).
+		
+
+	delete1([Num|T1], [Num|T2], Num, Res1, Res2,N):-
+		!,write("1 ",N),nl,N1 = N+1,delete1(T1, T2, Num, Res1, Res2,N1).
+	delete1([H|T1], [Num|T2], Num, [H|Res1], Res2,N):-
+		!,write("2 ",N),nl,N1 = N+1,delete1(T1, T2, Num, Res1, Res2,N1).
+	delete1([Num|T1], [H|T2], Num, Res1, [H|Res2],N):-
+		!,write("3 ",N),nl,N1 = N+1,delete1(T1, T2, Num, Res1, Res2,N1).
+	delete1([H1|T1], [H2|T2], Num, [H1|Res1], [H2|Res2],N):-
+		write("4 ",N),nl,N1 = N+1,delete1(T1, T2, Num, Res1, Res2,N1).
 		
 
 goal
-	delete([1,2,4],[1,3,2],2, List1, List2).
+	delete1([2,4],[1,2],2, List1, List2,0).
 	%len([1,2,3], L].
 	%sum([1,2,3,4,5], Sum).
 	%sum_odd([0,1,2,3,4,5,6,7], Sum).
