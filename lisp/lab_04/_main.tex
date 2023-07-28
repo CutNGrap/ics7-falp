@@ -65,28 +65,23 @@
 (defun without_last (x)
 	(
 		cond 
-		(
-			(cdr x) 
-			(cons (car x) (f4 (cdr x)))
-		)
-		(
-			T Nil
-		)
+		((cdr x) (cons (car x) (without_last (cdr x))))
+		(T Nil)
 	)
 )
 \end{lstlisting}
 
 \begin{lstlisting}
-(defun f4 (x)
+(defun without_last (x)
 	(reverse (cdr (reverse x)))
 )
 \end{lstlisting}
-
+\clearpage
 \section{Напишите функцию swap-first-last, которая переставляет в списке аргументе первый и последний элементы}
 
 \begin{lstlisting}
 (defun swap-first-last (x)
-	(append 
+	(nconc 
 		(last x)
 		(without_last (cdr x))
 		(cons (car x) Nil)
@@ -104,71 +99,8 @@
 выигрывает абсолютно, то выигрывает тот игрок, у которого больше
 очков. Результат игры и значения выпавших костей выводить на экран с помощью функции print. 
 
-\begin{lstlisting}
-(defvar dices)
-(defvar roll1)
-(defvar roll2)
-(defvar result)
+\lst{1}{54}{lab}{sx.lsp}
 
-(defun sum (throw)
-	(+ (car throw) (cdr throw)))
-
-(defun 1_roll ()
-	(+ (random 6) 1))
-	
-(defun roll ()
-	(cons (1_roll) (1_roll))
-)
-
-(defun reroll_d (sum_count)
-	(if (or (= sum_count 2) (= sum_count 12))
-		T
-		Nil))
-		
-(defun win_d (sum_count)
-	(if (or (= sum_count 7) (= sum_count 11))
-	T
-	Nil))
-	
-(defun turn ()
-	(setq dices (roll))
-	(terpri)
-	(princ "Rolled:")
-	(princ dices)
-	(setq result (sum dices))
-	
-	(cond 
-		((win_d result) Nil)
-		((not (reroll_d result)) result)
-		(T (turn))
-	)
-)
-
-(defun second_turn ()
-	(terpri)
-	(princ "Second player's turn")
-	(setq roll2 (turn))
-	(terpri)
-	(if (eval roll2)
-		(cond
-			((> roll1 roll2) (princ "First player wins!"))
-			((= roll1 roll2) (princ "Draw!"))
-			(T "Second player wins!"))
-		(princ "Second player wins!")
-	)
-)
-
-(defun game ()
-	(terpri)
-	(princ "First player's turn")
-	(setq roll1 (turn))
-	(terpri)
-	(if (eval roll1)
-		(second_turn)
-		(princ "First player wins!")
-	)
-)
-\end{lstlisting} 
 
 \section{Написать функцию, которая по своему списку-аргументу lst определяет 
 	является ли он палиндромом (то есть равны ли lst и (reverse lst)).}
@@ -194,7 +126,7 @@
 	)
 )
 \end{lstlisting}
-
+\clearpage
 \section{Напишите функцию, которая умножает на заданное число-аргумент 
 первый числовой элемент списка из заданного 3-х элементного списка аргумента.}
 Когда:
@@ -204,16 +136,13 @@ b) элементы списка -- любые объекты.
 \begin{lstlisting}
 (defun mul_a (lst num)
 	(cond
-		((and
-			(numberp num)
+		(
 			(and
+				(numberp num)
 				(numberp (car lst))
-				(and
-					(numberp (cadr lst))
-					(numberp (caddr lst))
-				)
-			)
-		) (* (car lst) num))
+				(numberp (cadr lst))
+				(numberp (caddr lst)))
+		) (* (car lst) num)
 		(T Nil)
 	)
 )
